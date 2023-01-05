@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title>Mobiscroll Test</title>
+
+    <!-- jQuery Mobile Include -->
+    <link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Mobiscroll JS and CSS Includes -->
+    <link href="css/mobiscroll.jquery.min.css" rel="stylesheet">
+    <script src="js/mobiscroll.jquery.min.js"></script>
+</head>
+
+<body>
+    <p>Hello there,</p>
+    <p>
+        This is a sample file for testing. Your trial is downloaded and already included in this file.
+        <br/> Feel free to edit it as you like. Write, paste some code below - markup &amp; mobiscroll initialization - or grab a <a target="_blank" href="https://demo.mobiscroll.com">demo</a> and <a href="mailto:hello@mobiscroll.com">let us know</a> if there are any questions &#128522;
+    </p>
+    <hr>
+
+    <!-- This is where you put the HTML markup :) -->
+    <div id="eventcalendar"></div>
+
+    <script>
+        // This is where you put the javascript code
+        $('#eventcalendar').mobiscroll().eventcalendar({
+            data: [{
+                start: new Date(),
+                title: 'Today\'s event'
+            }, {
+                start: new Date(2020, 11, 18, 9, 0),
+                end: new Date(2020, 11, 20, 13, 0),
+                title: 'Multi day event'
+            }]
+        });
+
+    </script>
+
+</body>
+
+</html>
