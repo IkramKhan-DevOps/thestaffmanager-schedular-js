@@ -1,2 +1,10 @@
-# lib-mobiscroll-web
-Plan HTML, CSS and JQUERRY implementation of mobi scroll library - used for timeline shifts and calenders management
+# ABSTRACT!
+
+Building a schedular for staffmanager.com
+
+## TECHNOLOGIES
+
+Html, CSS, JS, Bootstraps and JQuerry, Ajax
+
+## SERVER 
+https://thestaffmanager.com/
