@@ -1,0 +1,15 @@
+{
+  "name": "@bryntum/scheduler",
+  "version": "5.5.4",
+  "description": "Bryntum Scheduler JavaScript component",
+  "author": {
+    "name": "Bryntum",
+    "url": "https://bryntum.com",
+    "email": "info@bryntum.com"
+  },
+  "homepage": "https://bryntum.com",
+  "license": "Commercial",
+  "devDependencies": {},
+  "main": "scheduler.module.js",
+  "types": "./scheduler.d.ts"
+}
