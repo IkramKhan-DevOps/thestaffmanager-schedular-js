@@ -17,7 +17,7 @@ resourcesM = [
     --------------------------------------------------------------------------
     * */
 
-    {id: 1, name: 'John'},
+    {id: 1, name: 'John', cls : 'unavailable' },
     {id: 2, name: 'smith'},
     {id: 3, name: 'Jessica'},
     {id: 4, name: 'Mark'},
@@ -39,7 +39,7 @@ eventsM = [
     --------------------------------------------------------------------------
      */
 
-    {id: 1, resourceId: 1, name: 'Manager', startDate: '2023-11-16', endDate: '2023-11-23'},
+    {id: 1, resourceId: 1, name: 'Manager', startDate: '2023-11-16', endDate: '2023-11-23', eventColor : 'red'},
     {id: 2, resourceId: 2, name: 'Flight Attendent', startDate: '2023-11-11', endDate: '2023-11-22'},
     {id: 3, resourceId: 3, name: 'Sales', startDate: '2023-11-12', endDate: '2023-11-18'},
     {id: 4, resourceId: 4, name: 'Marketing', startDate: '2023-11-14', endDate: '2023-11-20'},

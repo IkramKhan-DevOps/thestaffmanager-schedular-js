@@ -29,11 +29,13 @@
         resources: resourcesM,
         events: eventsM,
 
+        eventStyle : 'colored',
+
         features: {
             sort: 'name',
             stripe: false,
             columnLines: true,
-            eventEdit: true,
+            eventEdit: false,
             eventResize: false,
             labels: true,
             nonWorkingTime: true,
@@ -49,6 +51,20 @@
                 showHeaderElements: true,
                 enableResizing: true
             },
+
+            eventMenu: {
+                items: {
+                    // Remove "Edit event" item provided by EventEdit feature
+                    editEvent: false
+                }
+            },
+
+            timeAxisHeaderMenu: {
+                items: {
+                    // Remove "Filter tasks" item provided by EventFilter feature
+                    eventsFilter: true
+                }
+            }
 
             // : SEARCH FEAT
             // filterBar : {
