@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Started</title>
-    <link href="css/scheduler.stockholm.css" rel="stylesheet" id="bryntum-theme">
+    <link href="css/scheduler.material.css" rel="stylesheet" id="bryntum-theme">
+    <script src="js/data.js"></script>
     <script src="js/scheduler.umd.js"></script>
 </head>
 
@@ -14,14 +15,63 @@
 
 <script>
     let scheduler = new bryntum.scheduler.Scheduler({
-        appendTo : document.body,
+        appendTo: document.body,
 
-        width : 800,
-        height : 600,
+        autoHeight: true,
+        rowHeight: 40,
+        barMargin: 4,
 
-        startDate : '2023-04-16',
-        endDate   : '2023-05-15',
+        startDate: '2023-11-01',
+        endDate: '2023-11-30',
+
+        // DATA -> ?
+        columns: columsM,
+        resources: resourcesM,
+        events: eventsM,
+
+        features: {
+            sort: 'name',
+            stripe: false,
+            columnLines: true,
+            eventEdit: true,
+            eventResize: false,
+            labels: true,
+            eventDrag: { // Configuration object
+                constrainDragToResource: false
+            },
+            nonWorkingTime: true,
+
+            // timeRanges: true, // TODO: or the below one
+            timeRanges: {
+                showCurrentTimeLine: true,
+                showHeaderElements: true,
+                enableResizing: true
+            },
+
+            // : SEARCH FEAT
+            // filterBar : {
+            //     filter : { property : 'name'}
+            // }
+
+            // : CUSTOM TOOLTIP
+            // eventTooltip: {
+            //     template: data => `
+            // <div class="b-sch-event-tooltip">
+            // ${data.startText} -> ${data.endText}
+            // </div>
+            // `
+            // }
+
+        },
+
+        listeners: {
+            eventclick() {
+
+            }
+        }
+
     });
+
 
 </script>
 </html>
