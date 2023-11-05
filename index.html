@@ -36,10 +36,12 @@
             eventEdit: true,
             eventResize: false,
             labels: true,
-            eventDrag: { // Configuration object
+            nonWorkingTime: true,
+
+            // eventDrag: false
+            eventDrag: { // TODO: Configuration object this or above
                 constrainDragToResource: false
             },
-            nonWorkingTime: true,
 
             // timeRanges: true, // TODO: or the below one
             timeRanges: {
@@ -64,14 +66,20 @@
 
         },
 
-        listeners: {
-            eventclick() {
-
-            }
-        }
-
     });
 
+    scheduler.on({
+        eventclick({event}) {
+            console.log(event)
+        },
+        // Call once and then unregister
+        once: true,
+        // Higher prio is called prior to lower
+        // prio: 100
+    });
+
+
+    // scheduler.on('eventclick', (event) => console.log(event));
 
 </script>
 </html>
